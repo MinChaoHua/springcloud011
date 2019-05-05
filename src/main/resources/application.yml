@@ -1,0 +1,13 @@
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
+  application:
+    name: service-test
+server:
+  port: 8087
+
+eureka:
+  client:
+     service-url:
+       defaultZone: http://localhost:8088/eureka/
